@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleSale - Product Filter and Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+          <h1>TeleSale</h1>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            oninput="searchProducts()"
+          />
+          <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="user-actions">
+          <a href="#">Login</a>
+          <a href="#">Cart</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+      <!-- Filter Sidebar -->
+      <div class="filter-sidebar">
+        <h4>Price Range</h4>
+        <div class="price-range">
+          <label for="min-price">Min Price:</label>
+          <input type="number" id="min-price" placeholder="100" />
+
+          <label for="max-price">Max Price:</label>
+          <input type="number" id="max-price" placeholder="200" />
+
+          <button onclick="filterProducts()">Filter</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="product-grid">
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-price="250" data-name="Product 2">
+          <img src="iphone-14.jpg" alt="Product 2" />
+          <h2>Product 2</h2>
+          <p>$250</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-price="150" data-name="Product 1">
+          <img src="iphone-11.jpg" alt="Product 1" />
+          <h2>Product 1</h2>
+          <p>$150</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Qo'shimcha mahsulotlar qo'shilishi mumkin -->
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- <footer>
+        <p>&copy; 2024 TeleSale. All Rights Reserved.</p>
+    </footer> -->
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
